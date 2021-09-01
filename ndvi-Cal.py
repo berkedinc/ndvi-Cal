@@ -65,5 +65,5 @@ nir = '08' # change this to '5' while working with Landsat-8 imagery.
 (bandNIR, crs, geoTransform, targetProjection) = readBands (nir, pathImagery)
 
 ndvix = NDVI(bandRed.astype(int), bandNIR.astype(int))
-
 tifNDVI, NDVIband = array2raster(ndvix, geoTransform, crs, pathOutput)
+
